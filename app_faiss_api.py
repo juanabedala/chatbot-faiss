@@ -15,6 +15,11 @@ INDEX_FILE = "vector_index.faiss"
 METADATA_FILE = "metadata.json"
 
 app = Flask(__name__)
+from flask import send_from_directory
+
+@app.route("/")
+def index():
+    return send_from_directory("static", "index.html")
 
 # === FUNCIONES ===
 
