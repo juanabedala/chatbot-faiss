@@ -6,6 +6,7 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 import os
 
+print("🔥 Starting Flask app...")
 # === CONFIGURACIÓN ===
 load_dotenv()
 API_KEY = os.getenv("GEMINI_API_KEY")
@@ -19,6 +20,7 @@ from flask import send_from_directory
 
 @app.route("/")
 def index():
+    print("📥 Serving index.html")
     return send_from_directory("static", "index.html")
 
 # === FUNCIONES ===
