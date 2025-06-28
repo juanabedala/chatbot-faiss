@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     print("📥 Serving index.html")
-    return send_from_directory("static", "index.html")
+    return send_file("index.html")
 
 @app.route("/preguntar", methods=["POST"])
 def preguntar():
