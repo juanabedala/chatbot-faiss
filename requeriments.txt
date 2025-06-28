@@ -1,7 +1,0 @@
-Flask
-flask-cors
-faiss-cpu
-python-dotenv
-google-generativeai
-numpy
-
