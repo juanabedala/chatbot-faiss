@@ -51,7 +51,7 @@ def buscar_contexto_para_gemini(consulta, top_k=3):
     return contexto
 
 def responder_con_gemini(pregunta, contexto):
-    modelo = genai.GenerativeModel("gemini-pro")
+    modelo = genai.GenerativeModel("gemini-2.5-flash")
     prompt = f"""
 Usá el siguiente contexto para responder la pregunta del usuario.
 
