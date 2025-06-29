@@ -1,4 +1,5 @@
-flask
+gunicorn
+Flask
 flask-cors
 faiss-cpu
 python-dotenv
