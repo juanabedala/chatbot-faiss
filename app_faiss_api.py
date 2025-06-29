@@ -18,7 +18,8 @@ METADATA_FILE = "metadata.json"
 
 # === APP FLASK ===
 app = Flask(__name__)
-CORS(app, origins=["https://chatbot-faiss-production.up.railway.app"])
+CORS(app, origins="*", supports_credentials=False, send_wildcard=True)
+# CORS(app, origins=["https://chatbot-faiss-production.up.railway.app"])
 # CORS(app, origins=["*"])   # Permite peticiones desde cualquier origen (útil si el frontend está en otro servidor)
 # CORS(app, resources={r"/consultar": {"origins": "https://www.juanico.com"}}, supports_credentials=True)
 
